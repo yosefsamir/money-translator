@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" ></script>
+    <title>Money Translator</title>
+</head>
+<body>
+<div class="container">
+    <h2>Money Converter</h2>
+        <div class="form-group">
+            <label>Amount:</label>
+            <input class="number" id="amount" placeholder="Enter Money.." required>
+        </div>
+        
+
+        <div class="form-group">
+            <label>Type:</label>
+            <select id="type">
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Convert" onclick="convert()">
+        <div id="result" class="result"></div>
+</div>
+</body>
+</html>
